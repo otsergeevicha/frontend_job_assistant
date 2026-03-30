@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+}
+
+@layer base {
+  :root {
+    /* Light Theme (Default) */
+    --background: #ffffff;
+    --foreground: #09090b;
+    --primary: #18181b;
+    --primary-foreground: #fafafa;
+    --card: #ffffff;
+    --card-foreground: #09090b;
+    --border: #e4e4e7;
+    --muted: #f4f4f5;
+    --muted-foreground: #71717a;
+  }
+
+  .dark {
+    --background: #09090b;
+    --foreground: #fafafa;
+    --primary: #fafafa;
+    --primary-foreground: #18181b;
+    --card: #09090b;
+    --card-foreground: #fafafa;
+    --border: #27272a;
+    --muted: #27272a;
+    --muted-foreground: #a1a1aa;
+  }
+
+  .theme-carrot {
+    --background: #fff6ed;
+    --foreground: #431407;
+    --primary: #ea580c;
+    --primary-foreground: #ffffff;
+    --card: #ffffff;
+    --card-foreground: #431407;
+    --border: #fed7aa;
+    --muted: #ffedd5;
+    --muted-foreground: #9a3412;
+  }
+
+  .theme-purple {
+    --background: #faf5ff;
+    --foreground: #3b0764;
+    --primary: #9333ea;
+    --primary-foreground: #ffffff;
+    --card: #ffffff;
+    --card-foreground: #3b0764;
+    --border: #e9d5ff;
+    --muted: #f3e8ff;
+    --muted-foreground: #7e22ce;
+  }
+
+  .theme-mint {
+    --background: #f0fdf4;
+    --foreground: #052e16;
+    --primary: #16a34a;
+    --primary-foreground: #ffffff;
+    --card: #ffffff;
+    --card-foreground: #052e16;
+    --border: #bbf7d0;
+    --muted: #dcfce7;
+    --muted-foreground: #15803d;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
